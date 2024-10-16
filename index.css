@@ -32,3 +32,8 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+#pagenation-area{
+    display: flex;
+    justify-content: center;
+}
