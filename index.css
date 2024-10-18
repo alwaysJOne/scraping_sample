@@ -1,3 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 .main-banner{
     display: flex;
     justify-content: center;
@@ -17,6 +25,11 @@
     cursor: pointer;
 }
 
+.container{
+    height: calc(100% - 243px);
+    padding: 48px 24px;
+}
+
 .btn-area{
     display: flex;
     align-items: center;
@@ -26,6 +39,16 @@
 
 .btn-area .btn{
     flex: 1;
+}
+
+.table-responsive{
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+#board-table thead{
+    position: sticky;
+    top: 0;
 }
 
 #board-table tr:hover{
